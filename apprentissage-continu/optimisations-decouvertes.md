@@ -1,6 +1,6 @@
 ---
 derniere_maj: 2026-02-09
-nombre_optimisations: 2
+nombre_optimisations: 3
 ---
 
 # Optimisations Découvertes
@@ -46,6 +46,14 @@ Une optimisation "Validée" est "Intégrée" quand :
 - **Benefice mesure** : Meilleure experience utilisateur, perception d'efficacite
 - **Implementation** : Afficher un seul message de lancement ("Je lance les recherches..."), puis directement la synthese finale formatee
 - **Statut** : En test
+- **Date decouverte** : 2026-02-09
+
+### Optimisation #3 : Integration Autorite de la Concurrence + Le Monde du Droit comme sources PRIORITAIRES
+- **Contexte de decouverte** : Comparaison avec ChatGPT session 09/02/2026 - ChatGPT a trouve 11 operations Fusacq + 5 deals Le Monde du Droit + 5 decisions DCC Autorite Concurrence (total 21 operations concretes) vs seulement 2 barometres de ma part
+- **Description** : Integrer Autorite de la Concurrence (decisions DCC controle concentrations) et Le Monde du Droit (flux quotidien deals angle cabinets) comme sources PRIORITAIRES dans la sequence de recherche operationnelle
+- **Benefice mesure** : +16 operations concretes supplementaires identifiees sur la periode 1-5 fevrier 2026. Granularite operationnelle maximale (noms societes, secteurs, types operations, cabinets conseils)
+- **Implementation** : (1) Autorite Concurrence en tete de sequence (source officielle publique, 0 paywall, exhaustivite garantie), (2) Le Monde du Droit juste apres (angle cabinets = valeur ajoutee TS: structuration juridique, earn-outs, garanties), (3) puis Fusacq/CFNEWS
+- **Statut** : Validee (comparaison empirique directe avec ChatGPT)
 - **Date decouverte** : 2026-02-09
 
 *Chaque fois qu'une nouvelle approche, raccourci de recherche ou technique de restitution s'avere efficace, elle est documentee ici avant d'etre eventuellement integree aux procedures standard.*

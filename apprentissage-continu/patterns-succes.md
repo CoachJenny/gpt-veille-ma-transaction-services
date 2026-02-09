@@ -31,14 +31,23 @@ Un pattern passe de "Candidat" à "Validé" quand :
 
 ## Patterns Actifs
 
-### Pattern #1 : Priorisation Tier 1 Systématique
-- **Contexte** : Toute requête de veille M&A
-- **Solution appliquée** : Toujours commencer par les sources Tier 1 (régulateurs, institutions, BDD publiques) avant de compléter avec Tier 2
-- **Résultat** : Fiabilité accrue, base factuelle solide avant enrichissement médiatique
+### Pattern #1 : Granularité Opérationnelle d'Abord (PRIORITAIRE)
+- **Contexte** : Demande de veille sur une période (quotidienne, hebdo, mensuelle)
+- **Solution appliquée** : Prioriser Fusacq + CFNEWS pour obtenir des opérations concrètes PME avant tout baromètre macro
+- **Résultat** : Synthèse opérationnelle directement exploitable (11 deals Fusacq vs 2 baromètres EY)
+- **Fréquence d'usage** : [À incrémenter]
+- **Taux de réussite** : [À mesurer]
+- **Date découverte** : 2026-02-09 (comparaison ChatGPT)
+- **Statut** : Validé
+
+### Pattern #1bis : Priorisation Tier 1 (contexte spécifique)
+- **Contexte** : Requête réglementaire, macro, ou tendances de fond
+- **Solution appliquée** : Commencer par sources Tier 1 (régulateurs, institutions) avant médias
+- **Résultat** : Fiabilité accrue pour sujets réglementaires/macro
 - **Fréquence d'usage** : [À incrémenter]
 - **Taux de réussite** : [À mesurer]
 - **Date découverte** : 2026-02-09
-- **Statut** : Candidat (intégré dès la conception)
+- **Statut** : Candidat (usage complémentaire au Pattern #1)
 
 ### Pattern #2 : Vérification Croisée Date/Contenu
 - **Contexte** : Chaque résultat de recherche

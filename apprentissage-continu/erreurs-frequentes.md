@@ -1,6 +1,6 @@
 ---
 derniere_maj: 2026-02-09
-nombre_erreurs_documentees: 7
+nombre_erreurs_documentees: 8
 ---
 
 # Erreurs Fréquentes à Éviter
@@ -81,6 +81,15 @@ nombre_erreurs_documentees: 7
 - **Prévention** : Toujours écrire les labels TodoWrite en texte brut sans accents problématiques, ou vérifier que les caractères accentués passent correctement
 - **Détection** : Relire les labels de tâches affichés à l'utilisateur
 - **Fréquence observée** : Observé 1 fois (session du 09/02/2026)
+- **Date identification** : 2026-02-09
+
+### Erreur #8 : Privilégier les Baromètres aux Opérations Concrètes
+- **Description** : Répondre à une demande de veille périodique (ex: "veille du 1 au 5 février") avec des baromètres trimestriels/annuels (EY, Grant Thornton, France Invest) au lieu d'opérations PME concrètes quotidiennes
+- **Cause racine** : Recherche web qui privilégie les contenus "informationnels" bien référencés SEO au lieu des flux d'actualité transactionnelle quotidienne (Fusacq, CFNEWS, Le Monde du Droit, Autorité Concurrence)
+- **Impact** : Élevé - l'utilisateur attend des transactions opérationnelles exploitables, pas des tendances macro génériques
+- **Prévention** : (1) Toujours commencer par Autorité Concurrence (DCC) + Le Monde du Droit + Fusacq + CFNEWS pour opérations concrètes, (2) Ajouter baromètres/études seulement si publiés dans ou proche de la période demandée (contexte macro complémentaire), (3) Mentionner en pied de synthèse les baromètres attendus dans les 4 semaines (consulter calendrier-publications-barometres.md)
+- **Détection** : Comparer le ratio opérations concrètes vs baromètres. Si <50% d'opérations, revoir la stratégie de recherche
+- **Fréquence observée** : Identifié 1 fois (comparaison ChatGPT session 09/02/2026)
 - **Date identification** : 2026-02-09
 
 ---
