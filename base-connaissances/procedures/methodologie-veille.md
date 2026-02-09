@@ -42,27 +42,45 @@ Selon le type de demande, prioriser :
   3. En fin de synthèse : mention des baromètres attendus prochainement (ex: "Baromètre EY Q1 2026 attendu mi-mars")
 - **Ne jamais remplacer** les opérations concrètes par des baromètres, mais les **compléter** avec du contexte macro si pertinent
 
-**Séquence de recherche optimale :**
-1. **Autorité de la Concurrence** (autoritedelaconcurrence.fr) : décisions DCC (contrôle concentrations) - source publique officielle, granularité maximale
-2. **Le Monde du Droit** (lemondedudroit.fr/deals) : flux quotidien deals angle cabinets (M&A, LBO, financement)
-3. **Fusacq** (site:fusacq.com) : flux quotidien opérations PME marketplace
-4. **CFNEWS** (site:cfnews.net) : base M&A/LBO/venture
-5. **Maddyness** : levées de fonds hebdomadaires
-6. **Les Échos / L'AGEFI** : grandes opérations + contexte
-7. **Tier 1 macro** (AMF, France Invest) : seulement si pertinent réglementaire ou tendances
+**Séquence de recherche optimale (EXHAUSTIVE) :**
 
-**Syntaxe de recherche web par source :**
-```
-Autorité Concurrence : site:autoritedelaconcurrence.fr "février 2026" DCC decision controle concentrations
-Le Monde du Droit   : site:lemondedudroit.fr/deals "février 2026" (acquisition OR LBO OR cession)
-Fusacq              : site:fusacq.com "février 2026" (acquisition OR cession OR LBO OR capital)
-CFNEWS              : site:cfnews.net "février 2026" M&A PME
-Maddyness           : site:maddyness.com MaddyMoney "février 2026"
-FrenchWeb           : site:frenchweb.fr "levée de fonds" "février 2026"
-Les Echos           : site:lesechos.fr "fusion acquisition" France "février 2026"
-```
+**PHASE 1 - Sources à flux quotidien (exploration exhaustive des pages sources)**
+1. **Autorité de la Concurrence** :
+   - URL directe : https://www.autoritedelaconcurrence.fr/fr/les-decisions-de-controle-des-concentrations
+   - WebFetch pour extraire TOUTES les décisions DCC de la période
+   - Capturer : nom opération, secteur, date décision
 
-Pour chaque résultat, capturer : titre, date, source, URL, résumé 3 lignes
+2. **Le Monde du Droit - Section Deals** :
+   - URL directe : https://www.lemondedudroit.fr/deals
+   - WebFetch pour extraire TOUS les deals de la période
+   - Capturer : titre deal, cabinets conseils, date publication, type opération
+
+3. **Fusacq - Page Buzz** :
+   - URL directe : https://www.fusacq.com/buzz/fr
+   - WebFetch pour extraire TOUTES les opérations de la période
+   - Capturer : titre, montant si divulgué, secteur, date, type opération
+
+4. **CFNEWS** :
+   - Recherche web : site:cfnews.net "février 2026" M&A PME
+   - Compléter par WebFetch des pages résultats si accessible
+
+**PHASE 2 - Sources hebdomadaires/mensuelles (recherche ciblée)**
+5. **Maddyness MaddyMoney** : recherche web + WebFetch de la page mensuelle si disponible
+6. **FrenchWeb** : recherche web levées de fonds
+7. **Les Échos** : recherche web M&A France PME
+8. **L'AGEFI** : recherche web private equity / mid-market
+
+**PHASE 3 - Sources complémentaires (si temps disponible)**
+9. **Option Finance** : recherche web corporate finance
+10. **Décideurs Magazine** : recherche web deals / palmarès
+11. **Journal du Net** : recherche web levées start-up
+
+**OBJECTIF QUALITÉ :**
+- Viser **30-50 opérations concrètes minimum** pour une semaine de veille
+- **100% des deals** doivent avoir leur montant indiqué (si divulgué) ou mentionner "non divulgué"
+- Couverture minimale : **8 sources sur 11** (Phase 1 + Phase 2 obligatoires)
+
+Pour chaque résultat, capturer : titre, date, source, URL, **montant**, secteur, type opération, résumé 3 lignes
 
 ### Étape 4 : Vérifier et Valider
 - **Chaque lien** : vérifier qu'il pointe vers le bon contenu

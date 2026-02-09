@@ -1,6 +1,6 @@
 ---
 derniere_maj: 2026-02-09
-nombre_erreurs_documentees: 8
+nombre_erreurs_documentees: 9
 ---
 
 # Erreurs Fréquentes à Éviter
@@ -90,6 +90,15 @@ nombre_erreurs_documentees: 8
 - **Prévention** : (1) Toujours commencer par Autorité Concurrence (DCC) + Le Monde du Droit + Fusacq + CFNEWS pour opérations concrètes, (2) Ajouter baromètres/études seulement si publiés dans ou proche de la période demandée (contexte macro complémentaire), (3) Mentionner en pied de synthèse les baromètres attendus dans les 4 semaines (consulter calendrier-publications-barometres.md)
 - **Détection** : Comparer le ratio opérations concrètes vs baromètres. Si <50% d'opérations, revoir la stratégie de recherche
 - **Fréquence observée** : Identifié 1 fois (comparaison ChatGPT session 09/02/2026)
+- **Date identification** : 2026-02-09
+
+### Erreur #9 : Veille Partielle au Lieu d'Exhaustive
+- **Description** : Retourner seulement 10-15 opérations alors que plusieurs dizaines sont disponibles sur les pages sources (ex: fusacq.com/buzz/fr, lemondedudroit.fr/deals). Se limiter aux premiers résultats de recherche web au lieu d'explorer exhaustivement les pages sources.
+- **Cause racine** : (1) WebSearch limite à ~10 résultats par requête, (2) absence d'utilisation de WebFetch pour extraire TOUS les deals des pages sources, (3) couverture partielle (5-6 sources au lieu de 8-11), (4) montants des opérations non systématiquement recherchés
+- **Impact** : Critique - l'utilisateur reçoit une veille incomplète et biaisée, manque des opérations majeures, impossibilité d'avoir une vision exhaustive du marché
+- **Prévention** : (1) Utiliser WebFetch sur les URLs directes des pages sources (autoritedelaconcurrence.fr/decisions, lemondedudroit.fr/deals, fusacq.com/buzz/fr) pour extraire TOUS les deals de la période, (2) Viser 30-50 opérations minimum par semaine, (3) Couverture minimale 8 sources sur 11, (4) 100% des deals avec montant indiqué (divulgué ou "non divulgué")
+- **Détection** : Compter le nombre d'opérations retournées. Si <30 pour une semaine de veille, la couverture est insuffisante. Vérifier manuellement une page source (ex: Fusacq) pour voir si des deals ont été manqués.
+- **Fréquence observée** : Identifié 1 fois (feedback utilisateur session 09/02/2026)
 - **Date identification** : 2026-02-09
 
 ---
